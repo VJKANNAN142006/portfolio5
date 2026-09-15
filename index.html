@@ -2045,7 +2045,7 @@ document.querySelectorAll(".reveal").forEach(item=>{
             letter.classList.add('assembled');
             const value = Math.round(((index+1)/letters.length)*100);
             if(percent) percent.textContent = String(value).padStart(2,'0') + '%';
-        }, 450 + index*115);
+        }, 300 + index*320);
     });
 
     // Start preparing the walking shot early, but keep it invisible.
