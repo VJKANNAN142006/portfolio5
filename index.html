@@ -2045,7 +2045,7 @@ document.querySelectorAll(".reveal").forEach(item=>{
             letter.classList.add('assembled');
             const value = Math.round(((index+1)/letters.length)*100);
             if(percent) percent.textContent = String(value).padStart(2,'0') + '%';
-        }, 300 + index*320);
+        }, 300 + index*520);
     });
 
     // Start preparing the walking shot early, but keep it invisible.
@@ -2059,7 +2059,7 @@ document.querySelectorAll(".reveal").forEach(item=>{
         intro.classList.add('show-walking');
         if(center) center.classList.add('title-exit');
         if(walkingLabel) walkingLabel.classList.add('show');
-    }, 2500);
+    }, 1500);
 
     // 2.35s — make the video clearly visible.
     setTimeout(()=>{
