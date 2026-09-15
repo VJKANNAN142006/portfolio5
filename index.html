@@ -2073,17 +2073,6 @@ document.querySelectorAll(".reveal").forEach(item=>{
         intro.classList.add('future-intro-out');
         document.body.classList.remove('no-scroll');
 
-        setTimeout(()=>{
-            if(video){
-                video.pause();
-                video.removeAttribute('src');
-                const source = video.querySelector('source');
-                if(source) source.remove();
-                video.load();
-            }
-            intro.remove();
-        }, 1200);
-    }
 
     // The walking video becomes the final shot, then the real portfolio appears.
     setTimeout(closeIntro, 6000);
